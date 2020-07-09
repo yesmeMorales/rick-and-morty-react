@@ -1,9 +1,9 @@
-@media screen and (max-width: 1440px) {
+/* @media screen and (max-width: 1440px) {
   .search {
     margin: 40px auto;
   }
-}
-
+} */
+/*
 @media screen and (max-width: 1024px) {
   .search {
     margin: 40px calc(50vw - 8em);
@@ -13,18 +13,7 @@
   .search {
     margin: 40px calc(50vw - 8em);
   }
-}
-
-.search {
-  grid-area: search;
-  /* margin: 3em 0; */
-  width: 200px;
-  height: 45px;
-  border-radius: 8px;
-  border: none;
-  padding: 5px 20px;
-  outline: none;
-}
+} */
 
 /* .wrapper {
   max-width: 1280px;

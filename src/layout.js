@@ -57,7 +57,7 @@ const LayoutStyled = styled.div`
 
   .learn-more-area {
     grid-area: learn-more;
-    margin-top: calc(15vh);
+    margin-top: calc(14vh);
   }
 
   .asset-area {
@@ -87,6 +87,10 @@ const LayoutStyled = styled.div`
     &.about {
       grid-area: about;
     }
+  }
+
+  .search-area {
+    grid-area: search;
   }
 
   @media screen and (max-width: 1024px) {
@@ -121,14 +125,20 @@ const LayoutStyled = styled.div`
     .asset-area {
       display: none;
     }
+    .grid-arrows-area {
+      margin-top: 2em;
+    }
   }
 
   @media screen and (max-width: 1440px) {
     column-gap: 2em;
+    .search-area {
+      margin: auto auto;
+    }
   }
 `;
 
-function Layout({ name, image, description, next, before }) {
+function Layout({ name, image, description, next, before, search }) {
   return (
     <LayoutStyled>
       <span className="asset-area top">
@@ -141,13 +151,9 @@ function Layout({ name, image, description, next, before }) {
       <div className="logo-area">
         <Logo />
       </div>
-      <input
-        type="text"
-        className="search"
-        defaultValue=""
-        id="searchh"
-        placeholder="Search character"
-      />
+
+      <div className="search-area">{search}</div>
+
       <div className="social-area">
         <Social />
       </div>

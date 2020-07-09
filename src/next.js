@@ -17,7 +17,11 @@ function Next() {
   // console.log(context);
   async function handleClick() {
     NProgress.start();
-    history.push(`/${context.character.id + 1}`);
+    if (context.character.id >= 1 && context.character.id < 591) {
+      history.push(`/${context.character.id + 1}`);
+    } else {
+      history.push(`/${context.character.id}`);
+    }
     // context.setCharacter(await api.getCharacter(context.character.id + 1));
     NProgress.done();
   }
