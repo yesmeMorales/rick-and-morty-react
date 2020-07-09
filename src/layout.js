@@ -52,12 +52,12 @@ const LayoutStyled = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 5em;
+    margin-top: 6em;
   }
 
   .learn-more-area {
     grid-area: learn-more;
-    margin-top: calc(14vh);
+    margin-top: calc(10vh);
   }
 
   .asset-area {
@@ -91,6 +91,7 @@ const LayoutStyled = styled.div`
 
   .search-area {
     grid-area: search;
+    margin: auto auto;
   }
 
   @media screen and (max-width: 1024px) {

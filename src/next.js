@@ -18,9 +18,9 @@ function Next() {
   async function handleClick() {
     NProgress.start();
     if (context.character.id >= 1 && context.character.id < 591) {
-      history.push(`/${context.character.id + 1}`);
+      history.push(`${process.env.PUBLIC_URL}/${context.character.id + 1}`);
     } else {
-      history.push(`/${context.character.id}`);
+      history.push(`${process.env.PUBLIC_URL}/${context.character.id}`);
     }
     // context.setCharacter(await api.getCharacter(context.character.id + 1));
     NProgress.done();

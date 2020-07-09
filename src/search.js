@@ -14,10 +14,10 @@ const SearchStyled = styled.input`
   /* } */
 
   @media screen and (max-width: 1024px) {
-    margin: 40px calc(50vw - 8em);
+    margin: 40px calc(50vw - 6em);
   }
   @media screen and (max-width: 768px) {
-    margin: 40px calc(50vw - 8em);
+    margin: 40px calc(50vw - 6em);
   }
 `;
 
