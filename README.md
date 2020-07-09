@@ -1,4 +1,8 @@
+# Rick And Morty App
+
 Rick and Morty project using react and react and morty API.
+
+- Live example -> https://yesmemorales.github.io/rick-and-morty-react/
 
 ## Install Project
 
