@@ -1,7 +1,10 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
+import NProgress from "nprogress";
+import { useHistory } from "react-router-dom";
 
 import CharacterContext from "./character-context";
+// import api from "./api";
 
 const NextStyled = styled.div`
   cursor: pointer;
@@ -9,10 +12,17 @@ const NextStyled = styled.div`
 `;
 
 function Next() {
-  const value = useContext(CharacterContext);
-  console.log(value);
+  const context = useContext(CharacterContext);
+  const history = useHistory();
+  // console.log(context);
+  async function handleClick() {
+    NProgress.start();
+    history.push(`/${context.character.id + 1}`);
+    // context.setCharacter(await api.getCharacter(context.character.id + 1));
+    NProgress.done();
+  }
   return (
-    <NextStyled>
+    <NextStyled onClick={handleClick}>
       <img src="images/arrow-right.svg" alt="" />
     </NextStyled>
   );

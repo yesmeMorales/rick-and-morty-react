@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const CharacterNameStyled = styled.div`
+  text-align: center;
   position: relative;
   font-size: 30px;
 
